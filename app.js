@@ -39,7 +39,7 @@ function menu(){
                     let novoNome= prompt('Digite um novo nome: ')
                     let novoEmail= prompt('Digite um novo e-mail: ')
                     let novoNumero= prompt('Digite um novo Número: ')
-                    editar(id, {nome: novoNome, email: novoEmail, numero: novoNumero})
+                    editar(id, {id: contatos[id].id, nome: novoNome, email: novoEmail, numero: novoNumero})
                     console.log('Adicionado com Sucesso')
                 }
                 menu()
